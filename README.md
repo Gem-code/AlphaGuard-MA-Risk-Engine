@@ -68,18 +68,3 @@ graph TD
         Router -->|Risk Flags| PMI[Blueprint Gen]
     end
 
-## 5. Performance Benchmarks
-**Test Environment:** Cloud Container (2 vCPU, 4GB RAM)
-
-| Metric | Performance | Notes |
-| :--- | :--- | :--- |
-| **PDF Ingestion** (100 Pages) | `4.2s` | 98th percentile |
-| **Monte Carlo** (1k Sims) | `0.18s` | High-speed calculation |
-| **Full Deal Scan** | `< 60s` | End-to-end processing |
-| **Covenant Precision** | `100%` | Deterministic Logic |
-
-## 6. Future Roadmap
-
-- [ ] **Video Multimodality**: Ingesting CEO interviews directly using Gemini’s native multimodal capabilities.
-- [ ] **Live VDR Connection**: Connecting directly to Intralinks/Datasite APIs.
-- [ ] **Real-time Alerting**: WebSocket integration for instant risk notifications.

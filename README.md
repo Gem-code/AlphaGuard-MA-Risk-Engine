@@ -60,8 +60,10 @@ graph TD
     E <-->|Context Retrieval| F[Gemini 1.5 Pro Agent]
     F -->|Risk Parameters| G[Monte Carlo Engine]
     G -->|Simulation Results| B
+```
 
 ---
+
 Key Components:
 Frontend: Streamlit-based dashboard for interactive document analysis.
 Core Agent: Gemini 1.5 Pro (Multimodal) for interpreting complex covenants and deal structures.

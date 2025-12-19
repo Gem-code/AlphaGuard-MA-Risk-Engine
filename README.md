@@ -60,9 +60,11 @@ graph TD
     G -->|Simulation Results| B
 ```
 
-Key Components:
+## Key Components:
 Frontend: Streamlit-based dashboard for interactive document analysis.
+
 Core Agent: Gemini 1.5 Pro (Multimodal) for interpreting complex covenants and deal structures.
+
 Simulation: Python-based Monte Carlo engine running 1k+ iterations for risk forecasting.
 
 ---

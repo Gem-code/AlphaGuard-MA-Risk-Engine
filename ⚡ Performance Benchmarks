@@ -1,0 +1,1 @@
+⚡ Performance BenchmarksTest Environment: Cloud Container (2 vCPU, 4GB RAM)1. Processing SpeedOperationTarget MetricAlphaGrade ActualStatusPDF Ingestion (100 Pages)< 5.0s4.2s✅ PassFull Deal Scan (End-to-End)< 60s58.5s✅ PassMonte Carlo (1k Sims)< 1.0s0.18s✅ PassPMI Plan Generation< 3.0s2.4s✅ Pass

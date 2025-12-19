@@ -1,6 +1,4 @@
-# AlphaGuard-MA-Risk-Engine
-"AI-Powered Pre-LOI Risk Screening Platform for M&amp;A Due Diligence."
-# 🛡️ AlphaGuard: M&A Deal Shield
+# 🛡️ AlphaGuard: The AI Powered M&A Deal Shield
 ### Institutional-Grade Pre-LOI Risk Intelligence
 *Built with: Google Gemini 2.0 Flash • Streamlit • Python • NumPy*
 

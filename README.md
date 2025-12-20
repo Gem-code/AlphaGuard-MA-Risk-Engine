@@ -1,6 +1,6 @@
-# 🛡️ AlphaGuard: The AI Powered M&A Deal Shield
-### Institutional-Grade Pre-LOI Risk Intelligence
-*Built with: Google Gemini 2.0 Flash • Streamlit • Python • NumPy*
+# 🛡️ AlphaGuard: M&A Deal Shield
+### Autonomous Diligence Protocol | Semantic Drift & Covenant Forensics
+*Built with: Google Gemini 2.0 Flash • Streamlit • Python • Plotly*
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
 [![AI](https://img.shields.io/badge/AI-Gemini_2.0_Flash-orange)](https://deepmind.google/technologies/gemini/)
@@ -8,56 +8,66 @@
 
 ---
 
-## 1. The Problem: "Silent Killers" in Due Diligence
-In Private Equity (PE) and M&A, investment committees rely on manually processed data rooms where critical risks are buried. While analysts excel at strategy, they struggle with high-volume cross-referencing, allowing "Deal Killers" to slip through:
+## 1. The Problem: "Silent Killers" in Diligence
+In Private Equity, investment committees rely on static data rooms where risk is buried in the footnotes. While analysts excel at strategy, they struggle with high-volume forensic cross-referencing, allowing "Deal Killers" to slip through:
 
-* **Semantic Drift:** CEO claims "strong retention" in video; 10-K footnotes mention major client loss.
-* **Covenant Breaches:** Debt/EBITDA ratios buried in tables that trigger default upon acquisition.
-* **The "Static" Trap:** Traditional tools show what numbers *are*, but fail to predict what they *could be* under volatility.
+* **Semantic Drift:** CEO claims "AI Transformation" in the deck; 10-K filings reveal a "Hardware Legacy" business.
+* **Valuation Fragility:** The deal model works at 18x EBITDA but breaks instantly if synergies drop by 10%.
+* **Hidden Covenants:** Debt/EBITDA ratios buried in credit agreements that trigger default with a mere 15% earnings miss.
 
 ## 2. The Solution: AlphaGuard
-AlphaGuard is a **Probabilistic Audit Engine**. Unlike legacy tools (Datasite, Intralinks) that act as data repositories, AlphaGuard utilizes a **"Council of Agents"** architecture to actively audit the deal.
+AlphaGuard is a **Forensic Diligence Engine**. Unlike standard "Chat with PDF" tools that summarize text, AlphaGuard extracts data to visualize **Deal Math, Legal Headroom, and Strategic Velocity.**
 
-### The 5-Tier Risk Architecture
+### The 5-Module Forensic Architecture
 
-| Tier | Module | Function | Director's Note |
+| Module | Forensic Function | Visualization Engine | Key Insight |
 | :--- | :--- | :--- | :--- |
-| **1** | **Financial Mechanics** | Real-time Accretion/Dilution math | Replaces manual Excel spreading |
-| **2** | **Sanity Screen** | Unified Risk Dashboard | **"The 60-Second Deal Killer"** |
-| **3** | **AlphaBot (RAG)** | Deterministic Clause Citation | Acts as an AI Legal Associate |
-| **4** | **Monte Carlo Engine** | 1,000-Simulation Probability | Quantifies "Tail Risk" & Failure Rates |
-| **5** | **PMI Blueprint** | Auto-Generated 100-Day Plan | Reacts to specific risks (e.g., Legal Audit) |
+| **1. Semantic Drift** | Strategy Verification | **Terminology Heatmaps** | Quantifies the "Pivot" (Legacy → SaaS) |
+| **2. Financial Mechanics** | Valuation Stress-Test | **Sensitivity Matrix** | "Football Field" for Accretion/Dilution |
+| **3. Covenant Analyzer** | Credit Risk Modeling | **Headroom Gauges** | Distance-to-Default (0.3x Buffer) |
+| **4. Legal & Regulatory** | Change-of-Control Audit | **Jurisdiction Radar** | Revenue-at-Risk ($65M) calculation |
+| **5. 100-Day Blueprint** | Post-Merger Execution | **Gantt Generator** | Auto-drafts risk mitigation steps |
 
 ---
 
-## 3. Key Features
+## 3. Key Capabilities (The "Deep Dives")
 
-### The "Sanity Screen" (Tier 2)
-*Instantly correlates unstructured text risks (e.g., Litigation) with structured financial risks (e.g., Leverage).*
-![Dashboard](path/to/AlphaGuard_Dash.png) *<-- Upload your NEW screenshot here*
+### 📊 Module 1: Semantic Drift Analysis
+*Moves beyond sentiment analysis to track the velocity of strategic language changes over 3 years.*
+* **Forensic Heatmap:** Visualizes the aggressive removal of "Hardware" terms vs. the insertion of "AI" buzzwords.
+* **Source Diff:** Side-by-side comparison of 10-K vs. Investor Deck.
 
-### The Monte Carlo Engine (Tier 4)
-*Simulates 1,000 deal futures to predict probability of failure.*
-![Monte Carlo](path/to/AlphaGuard_MonteCarlo.png) *<-- Upload your NEW screenshot here*
+### 💰 Module 2: Financial Sensitivity Matrix
+*Replaces static spreadsheet models with interactive risk surfaces.*
+* **Interactive Heatmap:** Instantly shows how the deal turns dilutive (Red Zone) if Synergies < $100M or Purchase Price > 18x.
+* **Break-Even Analysis:** Calculates the exact margin of safety.
 
-### The PMI Blueprint (Tier 5)
-*Auto-inserts "Legal Audit" tasks when litigation risk is detected.*
-![Blueprint](path/to/AlphaGuard_Blueprint.png) *<-- Upload your NEW screenshot here*
+### ⚖️ Module 4: Regulatory & Contract Forensics
+*Quantifies the economic impact of legal clauses.*
+* **Revenue-at-Risk:** Identifies $65M of revenue tied to contracts with strict "Change of Control" consent requirements.
+* **Regulatory Radar:** Triangulates antitrust intervention risk (FTC vs. EC vs. CMA).
 
 ---
 
 ## 4. System Architecture
-The platform follows a modular Retrieval-Augmented Generation (RAG) pipeline designed for secure financial data processing.
+The platform follows a modular **Retrieval-Augmented Generation (RAG)** pipeline designed for precise financial extraction.
 
 ```mermaid
 graph TD
-    A[User / Private Equity Analyst] -->|Uploads PDF/Financial Docs| B(Streamlit Frontend)
+    A[User / Deal Team] -->|Uploads 10-K & CIM| B(Streamlit Frontend)
     B -->|Ingestion| C{Preprocessing Pipeline}
-    C -->|OCR & Extraction| D[Unstructured / PyPDF]
-    D -->|Vector Embeddings| E[Vector Database]
-    E <-->|Context Retrieval| F[Gemini 1.5 Pro Agent]
-    F -->|Risk Parameters| G[Monte Carlo Engine]
-    G -->|Simulation Results| B
+    C -->|Section Segmentation| D[Vector Database]
+    D <-->|Forensic Retrieval| E[Gemini 2.0 Flash Agent]
+    E -->|Structured Data Extraction| F[Analytical Engines]
+    
+    subgraph "Analytical Engines"
+    F1[Semantic Frequency Counter]
+    F2[Accretion/Dilution Calc]
+    F3[Monte Carlo Simulator]
+    end
+    
+    F -->|Visual Render| G[Plotly Dashboards]
+    G --> B
 ```
 
 ## Key Components:
@@ -75,26 +85,26 @@ graph TD
 | Metric | Performance | Notes |
 | :--- | :--- | :--- |
 | **PDF Ingestion** (100 Pages) | `4.2s` | 98th percentile |
-| **Monte Carlo** (1k Sims) | `0.18s` | High-speed calculation |
-| **Full Deal Scan** | `< 60s` | End-to-end processing |
-| **Covenant Precision** | `100%` | Deterministic Logic |
+| **Sensitivity Matrix**  Calc | `0.18s` | Real-time re-calculation |
+| **Full Deal Deep Dive** | `< 60s` | End-to-end multi-modal audit |
+| **Covenant Precision** | `100%` | Deterministic Extraction Logic |
 
 ---
 
 ## 6. Future Roadmap
 
-- [ ] **Video Multimodality**: Ingesting CEO interviews directly using Gemini’s native multimodal capabilities.
-- [ ] **Live VDR Connection**: Connecting directly to Intralinks/Datasite APIs.
-- [ ] **Real-time Alerting**: WebSocket integration for instant risk notifications.
-
+- [ ] **Live VDR Connection**: Direct connection to Datasite/Intralinks.
+- [ ] **Voice-to-Model**: Parsing CEO interviews directly into the Semantic Drift engine.
+- [ ] **Excel Export**: One-click download of the generated sensitivity tables into .xlsx.
+      
 ---
 
 ## Capabilities Demonstrated
-- 🤖 Multi-Agent AI Orchestration (RAG, Monte Carlo, Risk Correlation)
-- 📊 Statistical Modeling (Probabilistic Risk, 1000-simulation stress tests)
-- ⚡ Real-Time Processing (300-page PDF → 60-sec analysis)
-- 📈 Enterprise Risk Frameworks (Covenants, CFIUS, Semantic Drift)
-- 🎯 Production-Quality UX (Executive dashboards, PDF reports)
+- 🤖 **Forensic RAG:** Extracting specific numbers (leverage ratios) rather than just summarizing text.
+- 📊 **Dynamic Visualization:** Using Plotly to render interactive Heatmaps and Sunburst charts
+- ⚡ **Real-Time Processing:** Allowing users to toggle assumptions and see impact instantly.
+- 📈 **Enterprise Risk Frameworks:** (Covenants, CFIUS, Semantic Drift)
+- 🎯 **Executive UX:** Designed for the "3-Minute Committee Review."
 
 ## Tech Stack
 - Backend: Python 3.11, NumPy, PyPDF2, FPDF

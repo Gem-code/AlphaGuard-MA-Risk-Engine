@@ -42,6 +42,11 @@ AlphaGuard is a **Forensic Diligence Engine**. Unlike standard "Chat with PDF" t
 * **Interactive Heatmap:** Instantly shows how the deal turns dilutive (Red Zone) if Synergies < $100M or Purchase Price > 18x.
 * **Break-Even Analysis:** Calculates the exact margin of safety.
 
+### 📜 Module 3: Covenant Forensics
+*Moves beyond keyword search to calculate the exact "Distance to Default."*
+* **Headroom Gauge:** Visualizes remaining leverage capacity (e.g., 0.3x turns) before a technical breach.
+* **Basket Analysis:** Quantifies "Permitted Leakage" (dividends/investments allowed before lender consent is required).
+
 ### ⚖️ Module 4: Regulatory & Contract Forensics
 *Quantifies the economic impact of legal clauses.*
 * **Revenue-at-Risk:** Identifies $65M of revenue tied to contracts with strict "Change of Control" consent requirements.
@@ -70,13 +75,6 @@ graph TD
     G --> B
 ```
 
-## Key Components:
- **Frontend:** Streamlit-based dashboard for interactive document analysis.
-
-**Core Agent:** Gemini 1.5 Pro (Multimodal) for interpreting complex covenants and deal structures.
-
-**Simulation:** Python-based Monte Carlo engine running 1k+ iterations for risk forecasting.
-
 ---
 
 ## 5. Performance Benchmarks
@@ -85,13 +83,13 @@ graph TD
 | Metric | Performance | Notes |
 | :--- | :--- | :--- |
 | **PDF Ingestion** (100 Pages) | `4.2s` | 98th percentile |
-| **Sensitivity Matrix**  Calc | `0.18s` | Real-time re-calculation |
+| **Sensitivity Matrix Calc** | `0.18s` | Real-time re-calculation |
 | **Full Deal Deep Dive** | `< 60s` | End-to-end multi-modal audit |
 | **Covenant Precision** | `100%` | Deterministic Extraction Logic |
 
 ---
 
-## 6. Future Roadmap
+## 6. Roadmap
 
 - [ ] **Live VDR Connection**: Direct connection to Datasite/Intralinks.
 - [ ] **Voice-to-Model**: Parsing CEO interviews directly into the Semantic Drift engine.
@@ -106,15 +104,5 @@ graph TD
 - 📈 **Enterprise Risk Frameworks:** (Covenants, CFIUS, Semantic Drift)
 - 🎯 **Executive UX:** Designed for the "3-Minute Committee Review."
 
-## Tech Stack
-- Backend: Python 3.11, NumPy, PyPDF2, FPDF
-- AI/ML: Google Gemini 2.0 Flash, RAG with citation extraction
-- Frontend: Streamlit with custom components
-- Data Models: Modular risk engines with cross-validation
-
-## Performance Benchmarks
-- 📄 Document Processing: 300 pages in 4.2 sec (p98)
-- 🎲 Monte Carlo: 1,000 simulations in 1.8 sec
-- 📊 End-to-End Analysis: <60 sec (10x faster than manual)
 
 

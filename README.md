@@ -49,53 +49,16 @@ AlphaGuard is a **Probabilistic Audit Engine**. Unlike legacy tools (Datasite, I
 ## 4. System Architecture
 The platform follows a modular Retrieval-Augmented Generation (RAG) pipeline designed for secure financial data processing.
 
-with st.expander("🏗️ System Architecture (Neuro-Symbolic Logic)", expanded=False):
-    st.graphviz_chart('''
-    digraph {
-        rankdir=TB;
-        node [shape=box, style="filled,rounded", fontname="Arial", fontsize=10];
-        edge [fontname="Arial", fontsize=9, color="#666666"];
-
-        # --- THE INPUT ---
-        Input [label="Deal Documents\n(PDF / Excel)", shape=note, fillcolor="#FFF3CD", color="#FFC107"];
-
-        # --- THE BRAIN ---
-        Orchestrator [label="⚙️ ORCHESTRATOR AGENT\n(Gemini 2.0 Flash)", fillcolor="#D1E7DD", color="#198754", penwidth=2];
-
-        # --- CLUSTER 1: UNSTRUCTURED AI ---
-        subgraph cluster_semantic {
-            label = "🤖 SEMANTIC AGENTS\n(RAG + Reasoning)";
-            style=dashed; color="#0D6EFD";
-            
-            Mod1 [label="Module 1:\nSemantic Drift", fillcolor="#E7F1FF"];
-            Mod4 [label="Module 4:\nRegulatory", fillcolor="#E7F1FF"];
-            Mod5 [label="Module 5:\nContracts", fillcolor="#E7F1FF"];
-        }
-
-        # --- CLUSTER 2: DETERMINISTIC MATH ---
-        subgraph cluster_math {
-            label = "🧮 DETERMINISTIC ENGINES\n(Python/NumPy)";
-            style=dashed; color="#DC3545";
-            
-            Mod2 [label="Module 2:\nFinancial Mech", fillcolor="#F8D7DA"];
-            Mod3 [label="Module 3:\nCovenants", fillcolor="#F8D7DA"];
-        }
-
-        # --- THE OUTPUT ---
-        Output [label="IC-Ready\nDiligence Report", shape=note, fillcolor="#FFF3CD", color="#FFC107"];
-
-        # --- CONNECTIONS ---
-        Input -> Orchestrator;
-        Orchestrator -> Mod1 [style=dotted];
-        Orchestrator -> Mod4 [style=dotted];
-        Orchestrator -> Mod5 [style=dotted];
-        
-        Orchestrator -> Mod2 [color="black", penwidth=2];
-        Orchestrator -> Mod3 [color="black", penwidth=2];
-        
-        Mod1 -> Output; Mod2 -> Output; Mod3 -> Output; Mod4 -> Output; Mod5 -> Output;
-    }
-    ''')
+```mermaid
+graph TD
+    A[User / Private Equity Analyst] -->|Uploads PDF/Financial Docs| B(Streamlit Frontend)
+    B -->|Ingestion| C{Preprocessing Pipeline}
+    C -->|OCR & Extraction| D[Unstructured / PyPDF]
+    D -->|Vector Embeddings| E[Vector Database]
+    E <-->|Context Retrieval| F[Gemini 1.5 Pro Agent]
+    F -->|Risk Parameters| G[Monte Carlo Engine]
+    G -->|Simulation Results| B
+```
 
 ## Key Components:
  **Frontend:** Streamlit-based dashboard for interactive document analysis.

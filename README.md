@@ -169,8 +169,7 @@ Unauthorized copying, distribution, or modification is prohibited.
 - White-label integration for GRC platform vendors
 - Custom deployment for PE firms and M&A advisories
 
-Contact: [geminiy@gmail.com] | [www.linkedin.com/in/
-gemini-y-29a2a2120]
+Contact: [geminiy@gmail.com] 
 
 ---
 

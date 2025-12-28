@@ -91,10 +91,115 @@ graph TD
 
 ## 6. Roadmap
 
-- [ ] **Live VDR Connection**: Direct connection to Datasite/Intralinks.
-- [ ] **Voice-to-Model**: Parsing CEO interviews directly into the Semantic Drift engine.
-- [ ] **Excel Export**: One-click download of the generated sensitivity tables into .xlsx.
+### ✅ Phase 1: Core Capabilities (Completed Dec 2025)
+- [x] 5-module forensic architecture
+- [x] Gemini 2.0 Flash integration
+- [x] Real-time sensitivity analysis
+- [x] Interactive Plotly dashboards
+
+### 🚧 Phase 2: Enterprise Features (Q1 2026)
+- [ ] Live VDR connection (Datasite/Intralinks API)
+- [ ] Voice-to-model (CEO interview transcription → Semantic Drift)
+- [ ] Excel export (one-click .xlsx download)
+- [ ] Multi-user access control
+
+### 🔮 Phase 3: Advanced Analytics (Q2 2026)
+- [ ] Industry-specific risk models (SaaS, Manufacturing, Pharma)
+- [ ] Peer benchmarking (vs comparable deals)
+- [ ] Natural language queries
+- [ ] Automated red flag alerts
       
+---
+
+## Quick Start
+
+### Prerequisites
+```bash
+Python 3.11+
+Gemini API key (get from ai.google.dev)
+```
+
+### Installation
+```bash
+# Clone repository
+git clone https://github.com/yourusername/alphaguard.git
+cd alphaguard
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set API key
+export GEMINI_API_KEY='your_key_here'
+
+# Run application
+streamlit run app.py
+```
+
+### Basic Usage
+```python
+# Upload documents via Streamlit interface
+# Or use programmatically:
+
+from alphaguard import AlphaGuard
+
+guard = AlphaGuard(api_key="your_gemini_key")
+results = guard.analyze_deal(
+    management_deck="path/to/presentation.pdf",
+    financial_statements="path/to/10K.pdf",
+    contracts_folder="path/to/contracts/"
+)
+
+print(results.semantic_drift_score)
+print(results.covenant_headroom)
+```
+
+---
+
+## License
+
+**Proprietary Research Prototype - All Rights Reserved**
+
+Copyright © 2025 Gem Yadav
+
+This software and associated documentation are proprietary and confidential. 
+Unauthorized copying, distribution, or modification is prohibited.
+
+**For licensing inquiries:**
+- Reference architecture licensing for Big 4 consulting firms
+- White-label integration for GRC platform vendors
+- Custom deployment for PE firms and M&A advisories
+
+Contact: [geminiy@gmail.com] | [www.linkedin.com/in/
+gemini-y-29a2a2120]
+
+---
+
+## Collaboration
+
+This is a proprietary research prototype demonstrating hybrid AI architecture 
+for M&A due diligence. Not currently accepting external contributions.
+
+**For strategic partnerships:**
+- Big 4 firms interested in white-label licensing
+- GRC vendors exploring integration opportunities
+- PE firms seeking custom deployment
+
+
+---
+
+
+## Technology Stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| **AI Engine** | Google Gemini 2.0 Flash | Semantic analysis, contract parsing |
+| **Financial Modeling** | Python 3.11, NumPy | Deterministic calculations |
+| **Pattern Matching** | Regex, spaCy | Covenant extraction |
+| **Risk Simulation** | NumPy, SciPy | Monte Carlo scenarios |
+| **Frontend** | Streamlit | Web interface |
+| **Visualization** | Plotly | Interactive dashboards |
+| **Database** | SQLite | Document metadata, results cache |
+
 ---
 
 ## Capabilities Demonstrated

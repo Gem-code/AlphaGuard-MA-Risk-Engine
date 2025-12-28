@@ -171,6 +171,10 @@ Unauthorized copying, distribution, or modification is prohibited.
 
 Contact: [geminiy@gmail.com] 
 
+*AlphaGuard is one of four AI governance prototypes in my research portfolio. 
+See [AI Vendor Compliance], [VendorGuard], and [AccessOps] for related work 
+in regulatory automation and enterprise risk management.*
+
 ---
 
 ## Collaboration
